@@ -1,11 +1,38 @@
 
 package com.mycompany.cuarta_practica;
 
+import java.util.ArrayList;
+
 
 public class Jugador {
     int posicion;
     int id;
+    
+    ArrayList Nombre;
+    ArrayList Apellido;
 
+    public ArrayList getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(ArrayList Nombre) {
+        this.Nombre = Nombre;
+    }
+
+    public ArrayList getApellido() {
+        return Apellido;
+    }
+
+    public void setApellido(ArrayList Apellido) {
+        this.Apellido = Apellido;
+    }
+
+    public Jugador(ArrayList Nombre, ArrayList Apellido) {
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+    }
+    
+    
     //constructor
     Jugador(int id){
         this.id = id;
