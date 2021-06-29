@@ -10,7 +10,8 @@ package com.mycompany.cuarta_practica;
  * @author CRIS
  */
 public class Intro extends javax.swing.JFrame {
-
+       
+        
     /**
      * Creates new form Intro
      */
@@ -154,11 +155,16 @@ public class Intro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    
+    public void Principal(){
         Principal form1 = new Principal();
         form1.setVisible(true);
         this.setVisible(false);
+    
+    }
         
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       
         int  dado1 = (int)(Math.random()*6)+1;
         int  dado2 = (int)(Math.random()*6)+1;
         

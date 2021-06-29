@@ -12,6 +12,8 @@ import java.util.ArrayList;
  * @author CRIS
  */
 public class Principal extends javax.swing.JFrame {
+    
+    
 //creamos 2 listas
     
     ArrayList Nombres = new ArrayList();
@@ -74,6 +76,11 @@ public class Principal extends javax.swing.JFrame {
         });
 
         btnjugar.setText("Jugar");
+        btnjugar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnjugarActionPerformed(evt);
+            }
+        });
 
         btnmostrar.setText("Mostrar");
         btnmostrar.addActionListener(new java.awt.event.ActionListener() {
@@ -181,6 +188,13 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void btnjugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnjugarActionPerformed
+        // TODO add your handling code here:
+        Intro in = new Intro();
+        in.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnjugarActionPerformed
 
     /**
      * @param args the command line arguments
