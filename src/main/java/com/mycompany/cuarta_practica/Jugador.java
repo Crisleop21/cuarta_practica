@@ -23,20 +23,29 @@ public class Jugador {
         if(dado2 > 6){
             dado2 = 6;
         }
+
+        int posicionInicial = this.posicion;
         this.posicion += dado1+dado2;
         
         this.comprobar_reglas();
+
+        System.out.printf("Jugador %d se movio de la casilla %d a la casilla %d\n", this.id, posicionInicial, this.posicion);
+        
+        if(this.posicion == 100){
+            System.out.printf("Jugador %d gana! %d", this.id);
+            
+        }
     }
     
     
     void caer(int casillaA, int casillaB){
-        System.out.printf("Jugador %d cae  de la casilla %d", this.id, casillaA, casillaB);
+        System.out.printf("Jugador %d cae  de la casilla %d a la casilla %d\n", this.id, casillaA, casillaB);
         this.posicion = casillaB;
 
     }
 
     void subir(int casillaA, int casillaB){
-        System.out.printf("Jugador %d sube  de la casilla %d", this.id, casillaA, casillaB);
+        System.out.printf("Jugador %d sube  de la casilla %d a la casilla %d\n", this.id, casillaA, casillaB);
         this.posicion = casillaB;
 
     }
@@ -67,6 +76,12 @@ public class Jugador {
             case 85:
                 this.subir(85,94);
                 break;
+        }
+        
+        if (this.posicion > 100){
+            int extra = (this.posicion - 100);
+            this.posicion = 100 - extra;
+            System.out.printf("Jugador %d regres % casillas\n",this.id,extra);
         }
     
     }
