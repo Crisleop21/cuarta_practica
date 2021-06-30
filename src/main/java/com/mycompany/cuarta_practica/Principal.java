@@ -236,12 +236,12 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton btnjugar;
     private javax.swing.JButton btnmostrar;
     private javax.swing.JButton btnsalir;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    public static javax.swing.JLabel jLabel1;
+    public static javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField txtapellido;
+    public static javax.swing.JTextField txtapellido;
     private javax.swing.JTextArea txtareadatos;
-    private javax.swing.JTextField txtnombre;
+    public static javax.swing.JTextField txtnombre;
     // End of variables declaration//GEN-END:variables
 }
