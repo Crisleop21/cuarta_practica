@@ -177,10 +177,9 @@ public class Intro extends javax.swing.JFrame {
     
     
     public void Principal(){
-        Principal form1 = new Principal();
-        form1.setVisible(true);
-        this.setVisible(false);
-    
+        Users us = new Users();
+        us.setVisible(true);
+        this.setVisible(false);    
     }
     
     private String[] j1 = new String[30];
