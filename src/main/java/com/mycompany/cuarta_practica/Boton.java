@@ -15,17 +15,12 @@ public class Boton extends JButton implements ActionListener{
     
     public Boton(int pos_x, int pos_y, int ancho, int alto){
         setBounds(pos_x, pos_y, ancho, alto);
-       
-       
-        
+             
         addActionListener(this);
         
     }
     
         
-    public void incrementarContador(){
-         
-    }
     public void setNombre(int f, int c){
         setText((f+1)+" , "+(c+1));
         
