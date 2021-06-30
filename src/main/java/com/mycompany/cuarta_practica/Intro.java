@@ -323,7 +323,19 @@ public class Intro extends javax.swing.JFrame {
         });
     }
     
-   
+   public void Botones(){
+               
+        for (int fila = 0; fila<filas ; fila++){
+            for(int columna = botones[0].length-1; columna >= 0; columna--){
+            botones[fila][columna] = new Boton(49*columna,55*fila,55,55);
+            botones[fila][columna].setText(contador+"");
+            //botones[fila][columna].setEnabled(false);
+//botones[fila][columna].setNombre(fila,columna);
+                jPanel2.add(botones[fila][columna]);
+            contador--;  
+            }
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
