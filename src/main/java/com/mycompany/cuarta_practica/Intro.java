@@ -206,8 +206,10 @@ public class Intro extends javax.swing.JFrame {
             posj1 += espacios;
             
             
-            //int postablero = posj1 +1;
-            //JOptionPane.showMessageDialog(null, "has sacado un "+ espacios + "te mueves a la posicion "+postablero);
+            int postablero = posj1 +1;
+            JOptionPane.showMessageDialog(null, "has sacado un " + espacios + "te mueves a la posicion " +postablero);
+             mostrardado1.setText(espacios+"");
+             mostrardado2.setText(dado2+"");
           
             for(int i = 0; i < j1.length; i++){
                 
@@ -248,10 +250,6 @@ public class Intro extends javax.swing.JFrame {
             
             posj2 += espacios;
             
-            //int postablero = posj2 +1;
-            //JOptionPane.showMessageDialog(null, "has sacado un "+ espacios + "te mueves a la posicion "+postablero);
-            mostrardado1.setText(espacios+"");
-            mostrardado2.setText(dado2+"");
             
             for(int i = 0; i < j2.length; i++){
                 
