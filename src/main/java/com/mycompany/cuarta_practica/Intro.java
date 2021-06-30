@@ -323,6 +323,8 @@ public class Intro extends javax.swing.JFrame {
         });
     }
     
+     private int contador = 49;
+    
    public void Botones(){
                
         for (int fila = 0; fila<filas ; fila++){
