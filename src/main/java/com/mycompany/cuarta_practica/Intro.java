@@ -185,12 +185,7 @@ public class Intro extends javax.swing.JFrame {
     private String[] j1 = new String[30];
     private String[] j2 = new String[30];
     
-    private int posj1 = 0;
-    private int posj2 = 0;
-    
-    private int turno = 0;
-    
-    private Random ran = new Random();
+   
     
       
     private void jtbotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtbotonActionPerformed
