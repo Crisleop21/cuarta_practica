@@ -182,8 +182,8 @@ public class Intro extends javax.swing.JFrame {
         this.setVisible(false);    
     }
     
-    private String[] j1 = new String[30];
-    private String[] j2 = new String[30];
+    private String[] j1 = new String[49];
+    private String[] j2 = new String[49];
     
     private int posj1 = 0;
     private int posj2 = 0;
@@ -216,6 +216,28 @@ public class Intro extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "pisas una escalera subes a la casilla 15");
                     posj1 = 14;                    
                 }
+                if(posj1 == 10){
+                    JOptionPane.showMessageDialog(null, "pisas una escalera subes a la casilla 15");
+                    posj1 = 15;                    
+                }
+                if(posj1 == 35){
+                    JOptionPane.showMessageDialog(null, "pisas una escalera subes a la casilla 40");
+                    posj1 = 40;                    
+                }
+                if(posj1 == 18){
+                    JOptionPane.showMessageDialog(null, "pisas una serpiente bajas a la casilla 5");
+                    posj1 = 5;                    
+                }
+                
+                if(posj1 == 48){
+                    JOptionPane.showMessageDialog(null, "pisas una serpiente bajas a la casilla 8");
+                    posj1 = 8;                    
+                }
+                
+                if(posj1 == 20 ){
+                    JOptionPane.showMessageDialog(null, "pisas una serpiente bajas a la casilla 11");
+                    posj1 = 11;                    
+                }
                 if(i == posj1){
                     j1[i] = "x";
                 }else{
@@ -237,7 +259,7 @@ public class Intro extends javax.swing.JFrame {
             
             turno = 1;
             
-            if(posj1 >= 30){
+            if(posj1 >= 49){
                 JOptionPane.showMessageDialog(null,"Jugador 1 ha ganado! ");
             }
             
@@ -259,6 +281,32 @@ public class Intro extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "pisas una escalera subes a la casilla 15");
                     posj2 = 14;                    
                 }
+                if(posj2 == 2){
+                    JOptionPane.showMessageDialog(null, "pisas una escalera subes a la casilla 15");
+                    posj2 = 14;                    
+                }
+                if(posj2 == 10){
+                    JOptionPane.showMessageDialog(null, "pisas una escalera subes a la casilla 15");
+                    posj2 = 15;                    
+                }
+                if(posj2 == 35){
+                    JOptionPane.showMessageDialog(null, "pisas una escalera subes a la casilla 40");
+                    posj2 = 40;                    
+                }
+                if(posj2 == 18){
+                    JOptionPane.showMessageDialog(null, "pisas una serpiente bajas a la casilla 5");
+                    posj2 = 5;                    
+                }
+                
+                if(posj2 == 48){
+                    JOptionPane.showMessageDialog(null, "pisas una serpiente bajas a la casilla 8");
+                    posj2 = 8;                    
+                }
+                
+                if(posj2 == 20 ){
+                    JOptionPane.showMessageDialog(null, "pisas una serpiente bajas a la casilla 11");
+                }
+                    posj2 = 11;
                 if(i == posj2){
                     j2[i] = "x";
                 }else{
@@ -280,7 +328,7 @@ public class Intro extends javax.swing.JFrame {
            
             turno = 1;
             
-            if(posj2 >= 30){
+            if(posj2 >= 49){
                 JOptionPane.showMessageDialog(null,"Jugador 2 ha ganado! ");
             }
         }
